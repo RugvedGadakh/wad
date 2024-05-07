@@ -1,0 +1,9 @@
+Your code sets up a basic HTTP server using Node.js. When a request is made to this server, it responds with the message "Hello i am Server Happy to See You :-)".
+
+Here's a breakdown of what each part does:
+
+1.const http = require("http");: This line imports the Node.js http module, which provides functionality to create HTTP servers and handle HTTP requests and responses.
+2.const server = http.createServer((req, res) => { ... });: This line creates an HTTP server instance using the createServer method. The function passed to createServer is called every time a request is made to the server. It takes two arguments: req (the request object) and res (the response object).
+3.res.end("Hello i am Server Happy to See You :-)");: This line sends the response back to the client with the message "Hello i am Server Happy to See You :-)" and ends the response.
+4.server.listen(8000, "127.0.0.1", () => { ... });: This line makes the server listen on port 8000 of the localhost (127.0.0.1). When the server starts listening, the callback function is executed, which logs the message "Listening at Port number 8000" to the console.
+-This code creates a simple HTTP server that listens for incoming requests on port 8000 and responds with a friendly message.
